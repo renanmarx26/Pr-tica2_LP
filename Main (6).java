@@ -9,6 +9,9 @@ class Main {
     println("1 - A VISTA\n");
     println("2 - 2 VEZES\n");
     println("3 - 3 VEZES\n");
+    println("4 - 4 VEZES\n");
+    println("5 - 5 VEZES\n");
+    println("6 - 6 VEZES\n");
 
     opcao = entrada.nextInt();
 
@@ -37,7 +40,7 @@ float seisVezes(float valor){
 
     int parcelas;
 
-    println("TOTAL : %.6f R$\n",valor);
+    println("TOTAL : %.2f R$\n",valor);
 
     do{
         println("Quantidade de parcelas.\n");
@@ -45,7 +48,7 @@ float seisVezes(float valor){
 
     }while( (parcelas > 6) || (parcelas < 3) );
 
-    println("%d PARCELAS DE %.6f R$ CADA.\n",parcelas,(valor * 5.03)/parcelas);
+    println("%d PARCELAS DE %.2f R$ CADA.\n",parcelas,(valor * 1.03)/parcelas);
 
     return(0);
 
